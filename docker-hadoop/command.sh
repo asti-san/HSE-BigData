@@ -13,8 +13,6 @@ bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.7.1.jar \
     -reducer "python reducer1.py" \
     -file /scripts/mapper1.py \
     -file /scripts/reducer1.py
-
-# bin/hadoop fs -getmerge means means.txt
 bin/hadoop fs -cat means/part-* > /scripts/means.txt
 
 bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.7.1.jar \
@@ -26,5 +24,4 @@ bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.7.1.jar \
 	-file /scripts/reducer2.py \
 	-file /scripts/means.txt
 
-# bin/hadoop fs -getmerge result results.txt
 bin/hadoop fs -cat result/part-* > /scripts/results.txt
