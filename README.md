@@ -1,2 +1,2 @@
 # HSE-BigData
-Home assignments for Bid Data course
+Home assignments for Big Data course
