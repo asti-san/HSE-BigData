@@ -1,4 +1,5 @@
-First mapreduce computes mean values of *prodTime* for every *antiNucleus*
+First mapreduce computes mean values of *prodTime* for every *antiNucleus* 
+
 Second mapreduce filters only these entries which contain *prodTime* > mean value per *antiNucleus*. Then calculates the number of unique *eventFile* and mean value of *Pt*
 
 To run it first make sure all the files from this repository (except results.txt) as well as data file are in the right place. One can load these files like follows:
@@ -15,4 +16,4 @@ To run it first make sure all the files from this repository (except results.txt
     sudo chmod +x <name>.sh
     sudo ./<name>.sh <docker_id>
 
-Then simply run **command.sh** script from the *script/* folder in docker. It'll produce result file named *results.txt*
+Then simply run **command.sh** script from the *script/*  folder in docker. It'll produce result file named *results.txt*
